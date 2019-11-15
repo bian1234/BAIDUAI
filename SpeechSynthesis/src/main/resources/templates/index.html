@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>这是我的网页</title>
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</head>
+<body>
+<div style="height: 110px">
+
+</div>
+
+<div class="row">
+    <div class="col-md-2 col-xs-1"></div>
+    <div class="col-md-8  col-xs-10">
+        <form action="/SpeechSynthesis1" about="post">
+            <div class="form-group">
+                <!--        <label for="exampleInputPassword1">Password</label>-->
+                <textarea name="text" class="form-control" rows="3" id="exampleInputPassword1" maxlength="1000"
+                          placeholder="在这里输入文字，我会把你的文字转化为语音，但是不能超过1000字哦！"></textarea>
+            </div>
+            <div class="checkbox">
+                <label class="radio-inline">
+                    <input type="radio" name="per" id="inlineRadio3" value="3" checked> 男声
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="per" id="inlineRadio4" value="4"> 女生
+                </label>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-save"
+                                                                                     aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;&nbsp;合成并下载
+                </button>
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-2 col-xs-1"></div>
+</div>
+<div class="row">
+    <div class="col-md-2 col-xs-1"></div>
+    <div class="col-md-8 col-xs-10"><h1>广告位出租，哈哈</h1></div>
+    <div class="col-md-2 col-xs-1"></div>
+</div>
+
+</body>
+
+</html>
