@@ -10,3 +10,6 @@ For further reference, please consider the following sections:
 这个是我的玩具，测试了百度AI的语音合成api。  
 项目地址：
 * [打开Github](https://github.com/bian1234/BAIDUAI)
+
+1. 启动项目
+2. 浏览器访问：http://localhost:8080
