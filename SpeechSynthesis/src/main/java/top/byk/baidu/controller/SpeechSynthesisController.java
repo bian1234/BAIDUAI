@@ -25,6 +25,7 @@ public class SpeechSynthesisController {
 
     @GetMapping("")
     public String toIndex(){
+        System.out.println("================"+System.getProperty("user.dir"));
         return "index";
     }
 
@@ -48,7 +49,8 @@ public class SpeechSynthesisController {
         }else {
              fileName = text+".mp3";
         }
-        String filePathAndName = "src/main/resources/static/mp3/"+fileName;
+
+        String filePathAndName = System.getProperty("user.dir")+"/"+fileName;
         int res = speechSynthesisService.SpeechSynthesis(text,per,filePathAndName);
         if (res == 0){
             return "语音转换失败，联系管理员";
@@ -56,7 +58,6 @@ public class SpeechSynthesisController {
         System.out.println("语音合成结束，结果为（1代表成功 0代表失败）："+res);
         OutputStream outputStream = null;
         try {
-
             String userAgent = request.getHeader("User-Agent");
             response.reset();
             // 防止中文乱码
@@ -126,5 +127,6 @@ public class SpeechSynthesisController {
         }
         return null;
     }
+
 
 }
